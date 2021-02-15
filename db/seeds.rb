@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Lead.create(first_name: 'Micky', last_name: 'Mouse', phone_number: '1234567890')
+Lead.create(first_name: 'Donald', last_name: 'Duck', phone_number: '9876543210')
