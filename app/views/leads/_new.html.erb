@@ -15,14 +15,19 @@
         </div>
       </div>
       <div class="form-group row">
-          <%= f.label :last_name, :class => "col-sm-4 col-form-label"%>
+        <%= f.label :last_name, :class => "col-sm-4 col-form-label"%>
         <div class="col-sm-8">
           <%= f.text_field :last_name, :class => "form-control", :placeholder => "Enter Last Name"%>
         </div>
       </div>
-    <% end %>
-  </div>
+      <div class="form-group row">
+        <%= f.label :phone_number, :class => "col-sm-4 col-form-label"%>
+        <div class="col-sm-8">
+          <%= f.text_field :phone_number, :class => "form-control", :placeholder => "Enter Phone Number"%>
+        </div>
+      </div>
+      <%= f.submit 'Create Lead', :class => "btn btn-primary float-right" %>
+  <% end %>
+  
 </div>
-<div class="modal-footer">
-  <button class="btn btn-primary">Save</button>
-</div>
+

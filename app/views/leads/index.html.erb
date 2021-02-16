@@ -7,6 +7,9 @@
       <div class="modal-content"></div>
     </div>
   </div>
+  <% if flash[:message] %>
+    <%= flash[:message] %>
+  <% end %>
   <table class='table table-striped table-bordered table-hover'>
     <thead class='thead-dark'>
       <tr>
