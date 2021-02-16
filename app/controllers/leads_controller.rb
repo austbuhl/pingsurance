@@ -5,6 +5,7 @@ class LeadsController < ApplicationController
   end
 
   def new
+    @lead = Lead.new
     respond_to do |format|
       format.html
       format.js
