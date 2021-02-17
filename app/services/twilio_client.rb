@@ -5,11 +5,11 @@ class TwilioClient
     @client = Twilio::REST::Client.new account_sid, auth_token
   end
 
-  def send_text(lead, message)
+  def send_text(lead)
     @client.messages.create(
-      to: lead.phone_number
       from: phone_number,
-      body: message
+      to: lead.phone_number,
+      body: lead.message
     )
   end
 
