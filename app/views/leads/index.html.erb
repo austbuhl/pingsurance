@@ -8,8 +8,13 @@
     </div>
   </div>
   <% if flash[:message] %>
-    <%= flash[:message] %>
+    <p><%= flash[:message] %></p>
   <% end %>
+  <% if flash[:errors] %>
+  <% flash[:errors].each do |error| %>
+    <p style="color:red;"><%= error %></p>
+  <% end %>
+<% end %>
   <table class='table table-striped table-bordered table-hover'>
     <thead class='thead-dark'>
       <tr>

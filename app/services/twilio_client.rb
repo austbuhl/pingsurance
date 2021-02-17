@@ -6,7 +6,7 @@ class TwilioClient
   end
 
   def send_text(lead, message)
-    client.messages.create(
+    @client.messages.create(
       to: lead.phone_number
       from: phone_number,
       body: message

@@ -17,7 +17,8 @@ class LeadsController < ApplicationController
     if @lead.valid?
       flash[:message] = "Lead, #{@lead.full_name}, was succesfully created!"
     else
-      flash[:message] = "Error creating lead, please try again"
+      byebug
+      flash[:errors] = @lead.errors.full_messages
     end
     redirect_to leads_path
   end
