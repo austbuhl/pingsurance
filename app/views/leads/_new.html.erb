@@ -26,6 +26,13 @@
           <%= f.text_field :phone_number, :class => "form-control", :placeholder => "Enter Phone Number"%>
         </div>
       </div>
+      <div class="form-group row">
+        <% f.label :message, :class => "col-sm-4 col-form-label"%>
+        <div class="col-sm-8">
+          <%= f.text_area :message, :class => "form-control", :placeholder => "Enter Message"%>
+        </div>
+      </div>
+
       <%= f.submit 'Create Lead', :class => "btn btn-primary float-right" %>
   <% end %>
   
