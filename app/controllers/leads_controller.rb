@@ -14,7 +14,7 @@ class LeadsController < ApplicationController
   def create
     lead = Lead.create(lead_params)
     if lead.valid?
-      TwilioClient.new.send_text(lead)
+      # TwilioClient.new.send_text(lead)
       flash[:message] = "Lead, #{lead.full_name}, was succesfully created!"
     else
       flash[:errors] = lead.errors.full_messages
