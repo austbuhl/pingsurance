@@ -7,5 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Lead.create(first_name: 'Micky', last_name: 'Mouse', phone_number: '1234567890')
-Lead.create(first_name: 'Donald', last_name: 'Duck', phone_number: '9876543210')
+Lead.create(first_name: 'Micky', last_name: 'Mouse', phone_number: '123-456-7890', message: 'Hello World')
+Lead.create(first_name: 'Donald', last_name: 'Duck', phone_number: '987-654-3210', message: 'Thank you for contacting us regarding your insurance needs!')
